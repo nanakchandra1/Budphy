@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventOwnerCell" rowHeight="163" id="Qe7-qk-CGS" customClass="EventOwnerCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qe7-qk-CGS" id="Wnc-CP-4bX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invited Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjt-c7-4Zh">
+                        <rect key="frame" x="31.5" y="48.5" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBa-xV-xYG" customClass="OnlyHorizontalPictures" customModule="OnlyPictures">
+                        <rect key="frame" x="31" y="75.5" width="256" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="qkh-Km-742"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pjt-c7-4Zh" firstAttribute="leading" secondItem="Wnc-CP-4bX" secondAttribute="leading" constant="31.5" id="5Rd-Ac-pHr"/>
+                    <constraint firstItem="jBa-xV-xYG" firstAttribute="leading" secondItem="pjt-c7-4Zh" secondAttribute="leading" id="LLe-ZG-f0W"/>
+                    <constraint firstItem="jBa-xV-xYG" firstAttribute="width" secondItem="Wnc-CP-4bX" secondAttribute="width" multiplier="0.8" id="Xyu-69-fu7"/>
+                    <constraint firstItem="jBa-xV-xYG" firstAttribute="top" secondItem="pjt-c7-4Zh" secondAttribute="bottom" constant="6" id="ZJD-aL-Sn6"/>
+                    <constraint firstItem="jBa-xV-xYG" firstAttribute="centerY" secondItem="Wnc-CP-4bX" secondAttribute="centerY" multiplier="1.2" id="wFM-qt-uWa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inviteFriendLabel" destination="pjt-c7-4Zh" id="pDj-4s-wER"/>
+                <outlet property="moreFriendsView" destination="jBa-xV-xYG" id="4It-bq-9NU"/>
+                <outlet property="moreFriendsViewHeight" destination="qkh-Km-742" id="V1K-Su-hw6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

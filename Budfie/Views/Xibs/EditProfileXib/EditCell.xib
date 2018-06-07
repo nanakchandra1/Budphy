@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EditCell" id="eIj-5a-ZuV" customClass="EditCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="216"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlt-D3-K1X">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="191"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTG-K8-Nej">
+                                <rect key="frame" x="7" y="14" width="167" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interestBollywood" translatesAutoresizingMaskIntoConstraints="NO" id="Ybu-3H-Hid">
+                                <rect key="frame" x="7" y="14" width="167" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ybu-3H-Hid" secondAttribute="height" multiplier="1:1" id="Lui-G4-JuD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-kJ-JxT">
+                                <rect key="frame" x="166" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Z9a-gw-2md"/>
+                                    <constraint firstAttribute="height" constant="20" id="hUR-Qj-zhX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <state key="normal" image="icCancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icAdd" translatesAutoresizingMaskIntoConstraints="NO" id="20I-Fw-COH">
+                                <rect key="frame" x="86" y="93" width="9" height="9"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="9" id="cZZ-WX-Rm7"/>
+                                    <constraint firstAttribute="height" constant="9" id="kUf-lb-6O3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="20I-Fw-COH" firstAttribute="centerX" secondItem="BTG-K8-Nej" secondAttribute="centerX" id="2ex-tt-lMw"/>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="centerY" secondItem="Zlt-D3-K1X" secondAttribute="centerY" constant="2" id="6Yn-8g-kM1"/>
+                            <constraint firstItem="BTG-K8-Nej" firstAttribute="bottom" secondItem="Ybu-3H-Hid" secondAttribute="bottom" id="HJh-ef-W6h"/>
+                            <constraint firstItem="BTG-K8-Nej" firstAttribute="leading" secondItem="Ybu-3H-Hid" secondAttribute="leading" id="P0U-uN-t6p"/>
+                            <constraint firstItem="BTG-K8-Nej" firstAttribute="trailing" secondItem="Ybu-3H-Hid" secondAttribute="trailing" id="ROe-7j-8jI"/>
+                            <constraint firstItem="20I-Fw-COH" firstAttribute="centerY" secondItem="BTG-K8-Nej" secondAttribute="centerY" id="WKI-Jr-cZX"/>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="centerX" secondItem="Zlt-D3-K1X" secondAttribute="centerX" constant="-5" id="bBJ-pu-5i0"/>
+                            <constraint firstItem="BTG-K8-Nej" firstAttribute="top" secondItem="Ybu-3H-Hid" secondAttribute="top" id="meh-Rh-dtH"/>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="width" secondItem="Zlt-D3-K1X" secondAttribute="width" multiplier="0.9" constant="-5" id="sar-nY-zJN"/>
+                            <constraint firstAttribute="width" secondItem="Zlt-D3-K1X" secondAttribute="height" multiplier="1:1" id="vpW-QC-w8R"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-WD-b8w">
+                        <rect key="frame" x="-2.5" y="196" width="186" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="width" secondItem="Zlt-D3-K1X" secondAttribute="width" constant="-5" id="5CJ-PJ-5PL"/>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="centerX" secondItem="Ybu-3H-Hid" secondAttribute="centerX" id="6Wm-2Q-pIz"/>
+                <constraint firstItem="Zlt-D3-K1X" firstAttribute="top" secondItem="eIj-5a-ZuV" secondAttribute="top" id="AKL-R3-kbE"/>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="top" secondItem="Zlt-D3-K1X" secondAttribute="bottom" constant="5" id="AwK-O7-ocI"/>
+                <constraint firstItem="3Pa-kJ-JxT" firstAttribute="top" secondItem="eIj-5a-ZuV" secondAttribute="top" id="GjY-YX-53l"/>
+                <constraint firstItem="Zlt-D3-K1X" firstAttribute="leading" secondItem="eIj-5a-ZuV" secondAttribute="leading" id="T5s-4E-HWL"/>
+                <constraint firstAttribute="trailing" secondItem="Zlt-D3-K1X" secondAttribute="trailing" id="ify-Fz-os8"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bOn-WD-b8w" secondAttribute="bottom" id="vbb-ji-yfu"/>
+                <constraint firstAttribute="trailing" secondItem="3Pa-kJ-JxT" secondAttribute="trailing" constant="5" id="xVp-2D-Cpn"/>
+            </constraints>
+            <size key="customSize" width="191" height="216"/>
+            <connections>
+                <outlet property="addImage" destination="20I-Fw-COH" id="Ngd-yV-wOX"/>
+                <outlet property="commonImageView" destination="Ybu-3H-Hid" id="ven-PP-91M"/>
+                <outlet property="imageBackView" destination="BTG-K8-Nej" id="k31-QW-oyl"/>
+                <outlet property="nameLabel" destination="bOn-WD-b8w" id="j6z-xM-AWW"/>
+                <outlet property="removeBtn" destination="3Pa-kJ-JxT" id="hSM-gI-fSO"/>
+            </connections>
+            <point key="canvasLocation" x="123.5" y="90"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icAdd" width="9" height="9"/>
+        <image name="icCancel" width="14" height="14"/>
+        <image name="interestBollywood" width="54" height="52"/>
+    </resources>
+</document>

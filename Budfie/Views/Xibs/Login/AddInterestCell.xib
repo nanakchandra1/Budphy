@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddInterestCellId" id="eIj-5a-ZuV" customClass="AddInterestCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="213"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlt-D3-K1X">
+                        <rect key="frame" x="5" y="5" width="174" height="174"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileGallery" translatesAutoresizingMaskIntoConstraints="NO" id="Ybu-3H-Hid">
+                                <rect key="frame" x="9" y="9" width="157" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ybu-3H-Hid" secondAttribute="height" multiplier="1:1" id="Lui-G4-JuD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="centerY" secondItem="Zlt-D3-K1X" secondAttribute="centerY" id="6Yn-8g-kM1"/>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="centerX" secondItem="Zlt-D3-K1X" secondAttribute="centerX" id="bBJ-pu-5i0"/>
+                            <constraint firstItem="Ybu-3H-Hid" firstAttribute="width" secondItem="Zlt-D3-K1X" secondAttribute="width" multiplier="0.9" id="sar-nY-zJN"/>
+                            <constraint firstAttribute="width" secondItem="Zlt-D3-K1X" secondAttribute="height" multiplier="1:1" id="vpW-QC-w8R"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-WD-b8w">
+                        <rect key="frame" x="0.5" y="184" width="184" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="width" secondItem="eIj-5a-ZuV" secondAttribute="width" id="5rQ-Nk-JGV"/>
+                <constraint firstItem="Zlt-D3-K1X" firstAttribute="top" secondItem="eIj-5a-ZuV" secondAttribute="top" constant="5" id="AKL-R3-kbE"/>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="top" secondItem="Zlt-D3-K1X" secondAttribute="bottom" constant="5" id="AwK-O7-ocI"/>
+                <constraint firstItem="Zlt-D3-K1X" firstAttribute="leading" secondItem="eIj-5a-ZuV" secondAttribute="leading" constant="5" id="T5s-4E-HWL"/>
+                <constraint firstItem="bOn-WD-b8w" firstAttribute="centerX" secondItem="eIj-5a-ZuV" secondAttribute="centerX" id="bAa-pK-esZ"/>
+                <constraint firstAttribute="trailing" secondItem="Zlt-D3-K1X" secondAttribute="trailing" constant="5" id="ify-Fz-os8"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bOn-WD-b8w" secondAttribute="bottom" id="vbb-ji-yfu"/>
+            </constraints>
+            <size key="customSize" width="184" height="213"/>
+            <connections>
+                <outlet property="commonImageView" destination="Ybu-3H-Hid" id="hJ9-Ev-ECT"/>
+                <outlet property="imageBackView" destination="Zlt-D3-K1X" id="Prc-6G-K4a"/>
+                <outlet property="nameLabel" destination="bOn-WD-b8w" id="rkZ-r3-P39"/>
+            </connections>
+            <point key="canvasLocation" x="98" y="97.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profileGallery" width="41" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular_0.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InterestsCell" rowHeight="109" id="KGk-i7-Jjw" customClass="InterestsCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ins-xH-Coa">
+                        <rect key="frame" x="15" y="10" width="290" height="98.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="290" placeholderIntrinsicHeight="30" text="Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DO-xi-LgT">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="7Z4-11-hpX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                <color key="textColor" red="0.70349055528640747" green="0.72550970315933228" blue="0.72967582941055298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-kF-86L">
+                                <rect key="frame" x="0.0" y="17" width="290" height="75.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPl-DI-PrC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bF-Z5-3U1">
+                                <rect key="frame" x="0.0" y="97.5" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.87100845579999997" green="0.87847906350000005" blue="0.87836921219999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="LJ7-cH-B1Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5bF-Z5-3U1" secondAttribute="width" id="3zw-3i-Z2e"/>
+                            <constraint firstItem="5bF-Z5-3U1" firstAttribute="centerX" secondItem="Ins-xH-Coa" secondAttribute="centerX" id="xKe-Bi-I1v"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5bF-Z5-3U1" secondAttribute="trailing" constant="15" id="10B-Y4-xTi"/>
+                    <constraint firstItem="5bF-Z5-3U1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1u8-jZ-fxz"/>
+                    <constraint firstItem="Ins-xH-Coa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sDe-Bk-U6H"/>
+                    <constraint firstAttribute="bottom" secondItem="5bF-Z5-3U1" secondAttribute="bottom" id="sHS-K7-LRS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addInterestsCollectionView" destination="Jpz-kF-86L" id="5FA-lq-bJT"/>
+                <outlet property="baseView" destination="5bF-Z5-3U1" id="ob9-az-7ko"/>
+                <outlet property="intrestLabel" destination="6DO-xi-LgT" id="OxT-6S-rF5"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="129.5"/>
+        </tableViewCell>
+    </objects>
+</document>

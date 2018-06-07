@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular_0.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatListCell" rowHeight="95" id="UFU-uu-OAO" customClass="ChatListCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UFU-uu-OAO" id="Dwc-cw-y4j">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-uZ-Ynk">
+                        <rect key="frame" x="18" y="18.5" width="342" height="59"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofilePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="qKO-ZH-4Hi">
+                                <rect key="frame" x="0.0" y="2" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="fdS-XG-QvK"/>
+                                    <constraint firstAttribute="width" constant="55" id="sOt-4d-7OH"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-5X-rQz">
+                                <rect key="frame" x="70" y="0.0" width="143.5" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="Paula seling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gis-XL-2zp">
+                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="18"/>
+                                        <color key="backgroundColor" red="1" green="0.9999405146" blue="0.99998033050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-Ul-QwQ">
+                                        <rect key="frame" x="0.0" y="23" width="143.5" height="36"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popupCheck" translatesAutoresizingMaskIntoConstraints="NO" id="EX9-zs-rzt">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="Hi, How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puV-0l-6L5">
+                                                <rect key="frame" x="40" y="0.0" width="103.5" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.9999405146" blue="0.99998033050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="100" horizontalCompressionResistancePriority="600" verticalCompressionResistancePriority="600" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sis-rf-3uz">
+                                <rect key="frame" x="228.5" y="19.5" width="20" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CV-CL-1l7">
+                                <rect key="frame" x="263.5" y="11.5" width="78.5" height="36"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popupCheck" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-3s-3N9">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" text="12:23 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IR8-lb-EYC">
+                                        <rect key="frame" x="36" y="0.0" width="42.5" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.9999405146" blue="0.99998033050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kr-SX-p24">
+                        <rect key="frame" x="0.0" y="0.0" width="6" height="94.5"/>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.792156862745098" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="wsr-vM-o0l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1ag-uZ-Ynk" firstAttribute="centerY" secondItem="Dwc-cw-y4j" secondAttribute="centerY" id="0xV-o9-jiC"/>
+                    <constraint firstItem="1ag-uZ-Ynk" firstAttribute="leading" secondItem="6kr-SX-p24" secondAttribute="trailing" constant="12" id="KrK-da-SV9"/>
+                    <constraint firstItem="6kr-SX-p24" firstAttribute="leading" secondItem="Dwc-cw-y4j" secondAttribute="leading" id="LZj-mf-xOi"/>
+                    <constraint firstAttribute="trailing" secondItem="1ag-uZ-Ynk" secondAttribute="trailing" constant="15" id="USg-j2-cqc"/>
+                    <constraint firstItem="6kr-SX-p24" firstAttribute="top" secondItem="Dwc-cw-y4j" secondAttribute="top" id="bSh-tS-eep"/>
+                    <constraint firstAttribute="bottom" secondItem="6kr-SX-p24" secondAttribute="bottom" id="wzg-tG-USn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatColorView" destination="6kr-SX-p24" id="B98-LH-uns"/>
+                <outlet property="chatColorViewWidth" destination="wsr-vM-o0l" id="YXx-QI-v8E"/>
+                <outlet property="checkboxImageView" destination="Tgv-3s-3N9" id="xOp-GY-c1g"/>
+                <outlet property="lastMsgContainerStackView" destination="Sbe-Ul-QwQ" id="YNT-0s-vUl"/>
+                <outlet property="lastMsgLbl" destination="puV-0l-6L5" id="Ltu-kx-9V0"/>
+                <outlet property="lastMsgStatusImageView" destination="EX9-zs-rzt" id="IQ2-xc-uUK"/>
+                <outlet property="lastMsgTimeLbl" destination="IR8-lb-EYC" id="dxI-Ss-Gg5"/>
+                <outlet property="senderImageView" destination="qKO-ZH-4Hi" id="cM7-rB-uwB"/>
+                <outlet property="senderNameLbl" destination="Gis-XL-2zp" id="aLh-cj-PpN"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="87.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="myprofilePlaceholder" width="137" height="137"/>
+        <image name="popupCheck" width="36" height="36"/>
+    </resources>
+</document>

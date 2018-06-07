@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MoreFriendsCellId" rowHeight="163" id="CFT-P0-c6L" customClass="MoreFriendsCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CFT-P0-c6L" id="tym-Ql-Ojp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invited Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-ah-YMS">
+                        <rect key="frame" x="31.5" y="48.5" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMd-kC-ndA" customClass="OnlyHorizontalPictures" customModule="OnlyPictures">
+                        <rect key="frame" x="31" y="75.5" width="256" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="e3i-z3-N6J"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjJ-Yr-tB8">
+                        <rect key="frame" x="218" y="44" width="67" height="30"/>
+                        <state key="normal" title="Add More"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aMd-kC-ndA" firstAttribute="top" secondItem="cbC-ah-YMS" secondAttribute="bottom" constant="6" id="4K7-e2-y2M"/>
+                    <constraint firstItem="cbC-ah-YMS" firstAttribute="leading" secondItem="tym-Ql-Ojp" secondAttribute="leading" constant="31.5" id="6Dc-Hg-WYh"/>
+                    <constraint firstItem="aMd-kC-ndA" firstAttribute="centerY" secondItem="tym-Ql-Ojp" secondAttribute="centerY" multiplier="1.2" id="HHN-lc-Hiq"/>
+                    <constraint firstItem="wjJ-Yr-tB8" firstAttribute="centerY" secondItem="cbC-ah-YMS" secondAttribute="centerY" id="KIn-oE-98O"/>
+                    <constraint firstItem="aMd-kC-ndA" firstAttribute="leading" secondItem="cbC-ah-YMS" secondAttribute="leading" id="X19-dL-EwG"/>
+                    <constraint firstItem="aMd-kC-ndA" firstAttribute="width" secondItem="tym-Ql-Ojp" secondAttribute="width" multiplier="0.8" id="iD5-7t-at3"/>
+                    <constraint firstAttribute="trailing" secondItem="wjJ-Yr-tB8" secondAttribute="trailing" constant="35" id="mdu-sO-gAG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addMoreBtn" destination="wjJ-Yr-tB8" id="vKG-bU-kLL"/>
+                <outlet property="inviteFriendLabel" destination="cbC-ah-YMS" id="L2J-hp-Jev"/>
+                <outlet property="moreFriendsView" destination="aMd-kC-ndA" id="K4j-cw-4aM"/>
+                <outlet property="moreFriendsViewHeight" destination="e3i-z3-N6J" id="j4J-P0-y0V"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

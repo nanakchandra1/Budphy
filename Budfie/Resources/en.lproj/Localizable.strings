@@ -1,0 +1,451 @@
+/* 
+  Localizable.strings
+  Onboarding
+
+  Created by  on 13/09/17.
+  Copyright © 2017 Gurdeep Singh. All rights reserved.
+*/
+
+//MARK :- App Messages
+//MARK :-=============//
+
+"Internet not connected message" = "The internet connection appears to be offline.";
+
+"Enter_Valid_Phone" = "Please enter valid Phone number";
+
+"Enter_Email" = "Please enter Email-Id";
+"Invalid_Email" = "Please enter a valid Email";
+"Invalid_First_Name" = "First Name must be character only";
+"Invalid_Middle_Name" = "Middle Name must be character only";
+"Invalid_Last_Name" = "Last Name must be character only";
+"First_Name_Invalid_Length" = "First name must be atleast 3 character long";
+"Invalid_Username" = "Please enter a valid Username";
+"Enter_First_Name" = "Please enter First name";
+"Enter_Middle_Name" = "Please enter Middle name";
+"Enter_Last_Name" = "Please enter Last name";
+"Last_Name_Invalid_Length" = "Last name must be atleast 3 character long";
+
+"User_Name_Invalid_Length" = "User name must be atleast 6 character long";
+
+"Invalid_Phone" = "Please enter 8-10 digits for mobile no.";
+"Invalid_Password" = "Enter 6 character for password section";
+"Minimum_Age_limit" = "Minimum age is 18";
+"Maximum_Age_limit" = "Maximum age is 130";
+"Enter_Mobile" = "Please enter Mobile Number";
+"Enter_Password" = "Please enter password";
+"Enter_DOB" = "Birthday";
+"Enter_Confirm_Password" = "Please enter Confirm password";
+"Confirm_Password_Wrong" = "Confirm password did not match";
+"Invalid_City_Name" = "Please enter valid city name";
+"City_Name_Invalid_Length" = "City name must be atleast 3 character long";
+"Enter_City_name" = "Please enter City name";
+
+"Invalid_Region_Name" = "Please enter valid region name";
+"Region_Name_Invalid_Length" = "Region name must be atleast 3 character long";
+"Enter_Region_name" = "Please enter Region name";
+
+"Invalid_Country_Code" = "Please enter valid Country code";
+"Enter_Country_code" = "Please enter Country code";
+
+"Biography_Invalid_Length" = "Biography must be atleast 3 character long";
+"Enter_Biography" = "Please enter biography";
+"Something_Went_Wrong" = "Something Went Wrong";
+
+//MARK:- SignupVC
+//===============
+"Male" = "Male";
+"Female" = "Female";
+"Other" = "Other";
+
+"First_Name" = "First Name";
+"Middle_Name" = "Middle Name";
+"Last_Name" = "Last Name";
+"User_Name" = "User Name";
+"Gender" = "Gender";
+"Date_Of_Birth" = "Date Of Birth";
+"Phone_No" = "Phone No";
+"Password" = "Password";
+"City" = "City";
+"Country_Code" = "Country Code";
+"Region" = "Region";
+"Longitude" = "longitude";
+"Latitude" = "latitude";
+"Postal_Code" = "Postal Code";
+"Confirm_Password" = "Confirm Password";
+"Done" = "Done";
+
+//MARK:- LoginVC
+//==============
+"LogIn_With" = "LOGIN WITH :";
+"Ok" = "Ok";
+"LOGIN" = "LOGIN";
+"Back" = "Back";
+"Email_Address" = "Email Address";
+"Password" = "Password";
+"FORGOT_PASSWORD" = "FORGOT PASSWORD";
+"Logout" = "Logout";
+
+//MARK:- ForgotPasswordVC
+//=======================
+"Send_OTP_to_email_address" = "Send OTP to email address";
+"CONTINUE" = "CONTINUE";
+
+
+//MARK:- UserDetailViewController
+//===============================
+"Change_Password" = "Change Password";
+
+
+//MARK:- HomeViewController
+//=========================
+"SIGNUP" = "SIGNUP";
+
+//MARK:- ChangePasswordVC
+//=======================
+"Old_Password" = "Old Password";
+"New_Password" = "New Password";
+"CHANGE_PASSWORD" = "CHANGE PASSWORD";
+
+"Enter_Old_Password" = "Please Enter Old Password";
+"Invalid_Old_Password" = "Invalid Old Password";
+"Enter_New_Password" = "Please Enter New Password";
+"Invalid_New_Password" = "Invalid New Password";
+
+//MARK:- CountryCodeVC
+//=======================
+"Select_Country" = "Select Country";
+"Search_Country" = "Search Country";
+
+//MARK:- ChangePasswordVC
+//=======================
+"Enter_New_Password_For_Your_Account" = "Enter new password for your account";
+
+
+//MARK:- UIViewController Extension
+//=================================
+"Choose_Options" = "Choose Options";
+"Camera" = "Camera";
+"Camera_not_available" = "Camera not available";
+"Choose_from_gallery" = "Choose from gallery";
+"Take_Photo" = "Take Photo";
+"Cancel" = "Cancel";
+"Alert" = "Alert";
+"Settings" = "Settings";
+"You_have_been_restricted_from_using_the_camera_on_this_device_without_camera_access_this_feature_wont_work" = "You have been restricted from using the camera on this device without camera access this feature wont work";
+"Please_change_your_privacy_setting_from_the_Settings_app_and_allow_access_to_camera_for_your_app" = "Please change your privacy setting from the Settings app and allow access to camera for your app";
+"Youve_been_restricted_from_using_the_library_on_this_device_Without_camera_access_this_feature_wont_work" = "You have been restricted from using the photo library on this device Without camera access this feature wont work";
+"Please_change_your_privacy_setting_from_the_Settings_app_and_allow_access_to_library_for" = "Please change your privacy setting from the Settings app and allow access to library for your app";
+
+//MARK:- PhoneNumberVC
+//====================
+"SUBMIT" = "SUBMIT";
+"Country_English_Name" = "CountryEnglishName";
+"Phone_Number" = "Phone Number";
+"Change_Number" = "Change Number";
+"India_Default_Code" = "India (+91)";
+"India_Code" = "+91";
+"Your_Phone_Number" = "Your Phone Number";
+"Enter_Current_Number" = "Enter Current Number";
+"Enter_New_Number" = "Enter New Number";
+"CountryCode" = "CountryCode";
+
+//MARK:- OneTimePasswordVC
+//========================
+"One_Time_Password" = "One Time Password";
+"OTP_Title_Label" = "We have sent you an access code via SMS for Mobile Number Verifications";
+"Resend_Code" = "Resend Code";
+
+//MARK:- MyProfileVC
+//==================
+"NEXT" = "NEXT";
+"My_Profile" = "My Profile";
+"Fetch_Your_Events_Via" = "Fetch your events via:";
+"Facebook" = "Facebook";
+"Google" = "Google";
+"Enter_Name" = "Name*";
+
+//MARK:- ProfilePicVC
+//===================
+"Profile_Pic" = "Profile Pic";
+"Choose" = "Choose :";
+"Gallery" = "Gallery";
+
+//MARK:- EditProfileVC
+//===================
+"Add" = "Add";
+"Save" = "Save";
+
+//MARK:- AddInterestsVC
+//=====================
+"Add_Interests" = "Add Interests";
+"Sports" = "Sports";
+"Cricket" = "Cricket";
+"Football" = "Football";
+"Badminton" = "Badminton";
+"Formula_1" = "Formula 1";
+"Racing" = "Racing";
+"Tennis" = "Tennis";
+"Movies" = "Movies";
+"Bollywood" = "Bollywood";
+"Hollywood" = "Hollywood";
+"Tollywood" = "Tollywood";
+"TV_Series" = "TV Series";
+"Series" = "Series";
+
+//MARK:- CricketPopUpVC
+//=====================
+"Choose_Cricket_Leagues" = "Choose Cricket Leagues:";
+"OK" = "OK";
+
+//MARK:- AddFavoriteInterestsVC
+//=============================
+"FINISH" = "FINISH";
+"Favorite_Fun_Activities" = "Favorite Fun Activities";
+"Plays" = "Live Shows";
+"Kids" = "Kids";
+"Food" = "Food";
+"Festivals" = "Festivals";
+"Adventure" = "Adventure";
+"Favorite_Holiday_Style" = "Favorite Holiday Style";
+"Beach" = "Beach";
+"Mountain" = "Mountain";
+"Luxury" = "Luxury";
+"Close_To" = "Close to";
+"Nature" = "Nature";
+
+
+//======================================================//
+//MARK:- Events StoryBoard
+//======================================================//
+
+//MARK:- EventsPopUpVC
+//====================
+"NOT_NOW" = "NOT NOW";
+"YES" = "YES";
+"NO" = "NO";
+"Would_You_Like_To_Fetch" = "Would you like to fetch";
+"Phone_Events_Now" = "phone events now?";
+"Facebook_Events_Now" = "Facebook events now?";
+"Google_Events_Now" = "Google events now?";
+
+//MARK:- EventVC
+//=================
+"K_Planner" = "Fun Plan";
+
+//MARK:- AddEventVC
+//=================
+"Add_Event" = "Add Event";
+"Add_Photo" = "Add Photo";
+"Event_Name" = "Event Name*";
+"Event_Type" = "Event Type*";
+"Date" = "Date*";
+"Time" = "Time*";
+
+"Event_Name_Not_Mandatory" = "Event Name";
+"Event_Type_Not_Mandatory" = "Event Type";
+"Date_Not_Mandatory" = "Date";
+"Time_Not_Mandatory" = "Time";
+
+"Location" = "location";
+"Remind_Me" = "Remind Me";
+"CREATE" = "CREATE";
+"Edit" = "Edit";
+
+//MARK:- InviteFriendsPopUpVC
+//===========================
+"Would_You_Like_To_Send_Special" = "Would you like to send special";
+"BUDFIE_Invite" = "BUDFIE invite?";
+"K_Are_You_Sure" = "Are you sure";
+"K_Logout_Msg" = "want to logout from app?";
+"K_Favourite_Msg" = "want to unfavorite this event?";
+
+"Skip" = "Skip";
+"Now" = "Now";
+
+
+//MARK:- InviteesVC
+//=================
+"Invitees" = "Contacts";
+"Invite" = "Invite";
+"Search" = "Search";
+
+
+//MARK:- InviteFriendsVC
+//======================
+"Invite_Friends" = "Invite Friends";
+"Hi_Jessica" = "Hi_Jessica";
+"Lets_Get_Your_Friends_Into_The_Fun" = "Let's get your friends into the fun";
+"INVITE_OTHER_FRIENDS" = "INVITE OTHER FRIENDS";
+
+//MARK:- HomeScreenVC
+//======================
+"K_Chats" = "Chats";
+"K_Greetings" = "Greetings";
+"K_Holiday_Planner" = "Holidays";
+"K_Time_Out" = "Time Out";
+"K_Shopping" = "Shopping";
+"K_Edit_Profile" = "Edit Profile";
+"K_Edit_Event" = "Edit Event";
+
+//MARK:- ExploreMoreVC
+//====================
+"K_Settings" = "Settings";
+"K_Notifications" = "Reminders";
+"K_Explore_More" = "Explore More";
+
+//MARK:- TimeOutVC
+//================
+"K_Happy" = "Happy";
+"K_Bored" = "Bored";
+"K_Fight" = "Mad";
+"K_Bad_Day" = "Bad";
+"K_Sad" = "Sad";
+"K_Lets_Try_To_Make_You_Happy" = "Let's celebrate!";//"Let's try to make you happy!";
+
+//MARK:- InvitationVC
+//===================
+"K_Invitation" = "Invitation";
+"K_ACCEPT" = "ACCEPT";
+"K_REJECT" = "REJECT";
+
+//MARK:- SettingsVC
+//=================
+"K_Change_Number" = "Change Number";
+"K_Blocked_Users" = "Blocked Users";
+"K_Rating_App" = "Rating App";
+"K_Privacy_Policy" = "Privacy Policy";
+"K_Terms_Conditions" = "Terms & Conditions";
+"K_Help_Support" = "Help & Support";
+"K_Invite_Friends" = "Invite Friends";
+
+//MARK:- HolidayPlannerVC
+//=======================
+"K_Its_Looonnnnnggg_Weekend" = "Its Looonnnnnggg Weekend!!";
+"K_Lets_Plan_holiday" = "Let's plan a holiday";
+"K_January" = "January";
+"K_February" = "February";
+"K_March" = "March";
+"K_April" = "April";
+"K_May" = "May";
+"K_June" = "June";
+"K_July" = "July";
+"K_August" = "August";
+"K_September" = "September";
+"K_October" = "October";
+"K_November" = "November";
+"K_December" = "December";
+
+"K_Videos" = "Videos";
+"K_Gifs" = "Gifs";
+"K_News" = "News";
+"K_Funny_Jokes" = "Jokes";
+"K_Clips" = "Clips";
+"K_Happy_Thoughts" = "Happy Thoughts";
+"K_Games" = "Games";
+"K_Plan_Holiday" = "Plan a Holiday";
+"K_Calm_Music" = "Music";
+"K_Game_Winit" = "Game Winfie";
+"K_Game_Killit" = "Game Killfie";
+//(1=News,2=Clips,3=Funny Jokes,4=Happy Thoughts,5=Shopping,6=Plan Holiday,7=Calm Music,8=Game Winit,9=Game Killit)
+//SUCCESS(1=News,2=Clips,3=Funny Jokes,4=Happy Thoughts,5=Games,6=Shopping)
+
+//MARK:- NewsDetailedVC
+//====================
+"K_Trending_Now" = "Trending NOW";
+
+//MARK:- QuickReminderVC
+//======================
+"K_Name_of_Person" = "Name of Person";
+"K_Repeat" = "Repeat";
+"" = "";
+
+
+//MARK:- Placeholders
+//===================
+"K_Under_Development" = "Under Development";
+"K_Loading_Your_Favourites" = "Loading all your favorites";
+"K_No_Videos_Gifs_Found" = "No Videos Or Gifs Found";
+"K_No_Mood_Options_Found" = "No Mood Options Found";
+"K_No_Greetings_Found" = "No Greetings Found";
+"K_No_Pending_Invitations" = "No Pending Invitations";
+"K_No_Pending_Reminders" = "No Reminders";
+"K_Near_Event" = "Near event is on";
+"K_No_Personal_Events" = "No Personal Events";
+"K_No_Concert_Events" = "No Concert Events";
+"K_No_Sports_Events" = "No Sports Events";
+"K_No_Movies_Events" = "No Movies Events";
+"K_No_Mobile_Events" = "No Mobile Events";
+"K_No_Data" = "No Data";
+"K_No_Events_Interest" = "No events as per interest";
+"K_Click_Add_Interest" = "Click to add interest";
+
+
+//=============================================================//
+//MARK:- SERVICE HIT
+//=============================================================//
+
+"K_Interest_List" = "interest_list";
+"K_User_Interest" = "user_interest";
+"K_Login" = "login";
+"K_Verify_Otp" = "verify_otp";
+"K_Resend_Otp" = "resend_otp";
+"K_User_Profile" = "user_profile";
+"K_Update_Profile" = "update_profile";
+"K_Check_Id" = "check_id";
+
+"K_Fetch_Personal_Events" = "fetch_personal_events";
+
+"K_Create_Event" = "create_event";
+"K_Event_Type" = "event_type";
+"K_Contact_Sync" = "contact_sync";
+"K_Friend_List" = "friend_list";
+"K_Event_Details" = "event_details";
+"K_Invite_Friends" = "invite_friends";
+"K_Fetch_Pending_Events" = "fetch_pending_events";
+"K_Accept_Reject" = "accept_reject";
+"K_Refresh_Device_Token" = "refresh_device_token";
+"K_On_Off_Notification" = "on_off_notification";
+"K_Logout" = "logout";
+"K_Get_New_Friends" = "get_new_friends";
+"K_Get_Concerts" = "get_concerts";
+"K_Get_Movies" = "get_movies";
+"K_Add_Remove_Favourite" = "add_remove_favourite";
+"K_Get_Event_Dates" = "get_event_dates";
+
+"K_Get_Soccer_Data" = "get_sports_data";
+
+"K_Mood_Options" = "mood_options";
+"K_Movie_List" = "movie_list";
+"K_Videos_List" = "videos_list";
+"K_Top_News" = "top_news";
+"K_Gif_List" = "gif_list";
+"K_Friend_Profile" = "friend_profile";
+"K_Block_Unblock" = "block_unblock";
+"K_Block_List" = "block_list";
+"K_Create_Holiday_Plan" = "create_holiday_plan";
+
+"K_Share_Greeting" = "share_greeting";
+"K_Greeting_Details" = "greeting_details";
+"K_Create_Greeting" = "create_greeting";
+"K_Greeting_List" = "greeting_list";
+"K_Delete_Greeting" = "delete_greeting";
+
+"K_Change_Number_Method" = "change_number";
+
+"K_Thoughts_List" = "thoughts_list";
+
+"K_Jokes_List" = "jokes_list";
+
+"K_Clips_List" = "clips_list";
+
+"K_Gift_List" = "gift_list";
+
+// MARK: ChatListVC
+"K_YESTERDAY" = "Yesterday";
+
+
+
+
+
+
+

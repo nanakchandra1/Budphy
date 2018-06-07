@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AttendeeCell" rowHeight="163" id="zb7-cg-ePI" customClass="AttendeeCell" customModule="Budfie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zb7-cg-ePI" id="RtH-rx-WT7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invited Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOG-4I-yS8">
+                        <rect key="frame" x="31.5" y="48.5" width="104" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nx-6h-ooK" customClass="OnlyHorizontalPictures" customModule="OnlyPictures">
+                        <rect key="frame" x="31" y="75.5" width="256" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="0Od-kH-CiB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Nx-6h-ooK" firstAttribute="leading" secondItem="VOG-4I-yS8" secondAttribute="leading" id="2OM-zb-p9u"/>
+                    <constraint firstItem="6Nx-6h-ooK" firstAttribute="top" secondItem="VOG-4I-yS8" secondAttribute="bottom" constant="6" id="a4T-ph-TaN"/>
+                    <constraint firstItem="6Nx-6h-ooK" firstAttribute="centerY" secondItem="RtH-rx-WT7" secondAttribute="centerY" multiplier="1.2" id="gRS-Vr-nT5"/>
+                    <constraint firstItem="6Nx-6h-ooK" firstAttribute="width" secondItem="RtH-rx-WT7" secondAttribute="width" multiplier="0.8" id="sub-A8-CxU"/>
+                    <constraint firstItem="VOG-4I-yS8" firstAttribute="leading" secondItem="RtH-rx-WT7" secondAttribute="leading" constant="31.5" id="vIr-SQ-KQi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inviteFriendLabel" destination="VOG-4I-yS8" id="yJW-X7-MXM"/>
+                <outlet property="moreFriendsView" destination="6Nx-6h-ooK" id="MXR-eK-RkR"/>
+                <outlet property="moreFriendsViewHeight" destination="0Od-kH-CiB" id="CM0-KF-vW9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
